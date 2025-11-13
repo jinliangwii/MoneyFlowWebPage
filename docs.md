@@ -4,6 +4,10 @@ title: Documentation
 permalink: /docs/
 ---
 
+<div class="logo-container">
+  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MoneyFlow Logo" style="max-width: 120px;">
+</div>
+
 # MoneyFlow Documentation
 
 Welcome to the MoneyFlow documentation. This page provides an overview of all available documentation.

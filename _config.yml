@@ -23,9 +23,10 @@ exclude:
   - vendor
   - README.md
 
-# Include docs
+# Include docs and assets
 include:
   - Docs
+  - assets
 
 # Markdown settings
 markdown: kramdown
