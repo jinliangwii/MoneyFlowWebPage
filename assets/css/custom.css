@@ -1,117 +1,294 @@
-/* Custom styles for MoneyFlow website */
+/* Modern Minimalist Design for MoneyFlow */
 
-/* Logo styling */
+:root {
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
+  --color-text-light: #6b7280;
+  --color-bg: #ffffff;
+  --color-bg-light: #f9fafb;
+  --color-border: #e5e7eb;
+  --spacing-unit: 1.5rem;
+  --max-width: 1200px;
+}
+
+/* Base typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-text);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Logo - minimal and clean */
 .logo-container {
   text-align: center;
-  margin: 2rem 0;
+  margin: 4rem 0 3rem;
+  padding: 0;
 }
 
 .logo-container img {
-  max-width: 200px;
+  max-width: 120px;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
 }
 
 .logo-container img:hover {
-  transform: scale(1.05);
+  opacity: 1;
 }
 
-/* Hero section */
+/* Hero section - clean and minimal */
 .hero-section {
   text-align: center;
-  padding: 3rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 10px;
-  margin: 2rem 0;
+  padding: 4rem 0;
+  margin: 0 0 4rem;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hero-section h1 {
-  margin-top: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
 }
 
-/* Feature cards */
+.hero-section p {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  font-weight: 400;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Overview section */
+.overview {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 4rem;
+  max-width: 700px;
+}
+
+/* Feature grid - minimal cards */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.feature-card {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #e9ecef;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.feature-card h3 {
-  margin-top: 0;
-  color: #667eea;
-}
-
-/* Future plans section */
-.future-plans {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  margin: 3rem 0;
-}
-
-.future-plans h2 {
-  margin-top: 0;
-  text-align: center;
-}
-
-.plan-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin: 3rem 0;
 }
 
-.plan-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.feature-card {
+  background: var(--color-bg);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  transition: border-color 0.2s ease;
 }
 
-.plan-card h3 {
-  margin-top: 0;
+.feature-card:hover {
+  border-color: var(--color-primary);
+  transform: none;
+  box-shadow: none;
+}
+
+.feature-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--color-text);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
+.feature-card p {
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+/* Future plans - subtle and clean */
+.future-plans {
+  background: var(--color-bg-light);
+  padding: 3rem 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  margin: 4rem 0;
+}
+
+.future-plans h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0 0 1rem;
+  border: none;
+  padding: 0;
+  color: var(--color-text);
+}
+
+.future-plans > p {
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.plan-card {
+  background: var(--color-bg);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  backdrop-filter: none;
+}
+
+.plan-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.plan-card p {
+  color: var(--color-text-light);
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
 .plan-card ul {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
 }
 
-.plan-card li {
+.plan-card ul li {
+  color: var(--color-text-light);
   margin: 0.5rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1rem;
 }
 
-/* Badge styling */
+.plan-card ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-light);
+}
+
+/* Badge - minimal */
 .badge {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  font-size: 0.85rem;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   margin-left: 0.5rem;
+}
+
+/* Buttons - minimal and clean */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  text-decoration: none;
+  border-radius: 0;
+  transition: background 0.2s ease;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border: 1px solid var(--color-text);
+}
+
+.btn-primary:hover {
+  background: var(--color-text-light);
+  border-color: var(--color-text-light);
+}
+
+/* Section spacing */
+section {
+  margin: 4rem 0;
+}
+
+/* Code blocks */
+pre, code {
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--color-text-light);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+/* Remove emoji styling - keep them but make them subtle */
+.feature-card h3,
+.plan-card h3 {
+  font-size: 1.125rem;
 }
 
 /* Responsive design */
@@ -120,34 +297,67 @@
     font-size: 2rem;
   }
   
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
   .feature-grid,
   .plan-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .logo-container {
+    margin: 2rem 0 1.5rem;
   }
   
   .logo-container img {
-    max-width: 150px;
+    max-width: 100px;
+  }
+  
+  .future-plans {
+    padding: 2rem 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
-/* Button styling */
-.btn-primary {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #667eea;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-  margin: 0.5rem;
+/* Main content wrapper */
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.btn-primary:hover {
-  background: #5568d3;
+/* Remove default margins from markdown */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-/* Section spacing */
-section {
-  margin: 3rem 0;
+/* Clean up minima theme defaults */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
 }
 
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.site-nav {
+  font-size: 0.9375rem;
+}
+
+.site-nav a {
+  color: var(--color-text-light);
+  border-bottom: none;
+}
+
+.site-nav a:hover {
+  color: var(--color-text);
+  border-bottom: none;
+}
