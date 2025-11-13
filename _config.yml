@@ -1,0 +1,34 @@
+# GitHub Pages Jekyll Configuration
+title: MoneyFlow
+description: A modern personal finance management app built with SwiftUI for macOS
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Site settings
+baseurl: "/MoneyFlowWebPage"
+url: "https://jinliangwii.github.io"
+
+# Navigation
+header_pages:
+  - index.md
+  - docs.md
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Include docs
+include:
+  - Docs
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
