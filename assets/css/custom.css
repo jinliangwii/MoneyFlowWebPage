@@ -50,12 +50,12 @@ h3 {
 /* Logo - minimal and clean */
 .logo-container {
   text-align: center;
-  margin: 4rem 0 3rem;
+  margin: 3rem 0 2rem;
   padding: 0;
 }
 
 .logo-container img {
-  max-width: 120px;
+  max-width: 64px;
   height: auto;
   border-radius: 0;
   box-shadow: none;
@@ -312,7 +312,7 @@ a:hover {
   }
   
   .logo-container img {
-    max-width: 100px;
+    max-width: 48px;
   }
   
   .future-plans {

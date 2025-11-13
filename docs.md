@@ -5,7 +5,7 @@ permalink: /docs/
 ---
 
 <div class="logo-container">
-  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MoneyFlow Logo" style="max-width: 80px;">
+  <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MoneyFlow Logo" style="max-width: 48px;">
 </div>
 
 # Documentation
